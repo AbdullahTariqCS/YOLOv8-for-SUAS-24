@@ -3,10 +3,11 @@
 *The source code for these projects is private under **Team Foxtrot**. For access to the codebase, please email me at **AbdullahTariq.git@gmail.com**.*
 
 ## **Overview**
-This project focuses on developing an end-to-end pipeline for generating synthetic datasets and training a UAV-based shape and letter detection model using YOLOv8. The project consists of two main components:
+This project focuses on developing an end-to-end pipeline for generating synthetic datasets and training a UAV-based shape and letter detection model using YOLOv8. The project consists of three main components:
 
 1. **Dataset Generator for a Detection Model** – A Python-based synthetic dataset generator using OpenCV and NumPy.
 2. **YOLOv8-Based Shape & Letter Detection on UAV** – A custom-trained YOLOv8 model deployed on a Jetson Orin for real-time UAV detection.
+3. **Simulation for Testing** - A custom Unity Environment to test the complete mission
 
 ---
 
@@ -20,7 +21,7 @@ To create a high-quality synthetic dataset for training a shape detection model 
 - **High-Speed Generation:** Produces **24,000 images in just 3 minutes**, significantly accelerating model training.
 
 ### **Implementation Details**
-- **Shapes Generated:** Circles, , triangles, and polygons.
+- **Shapes Generated:** Circles, Semicircles, Cross, and Polygons.
 - **Randomized Parameters:** Position, rotation, scale, noise, blur and background textures.
 - **Libraries Used:** OpenCV for image processing, NumPy for mathematical transformations, and multiprocessing for faster image generation.
 
