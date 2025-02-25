@@ -18,8 +18,8 @@ To create a high-quality synthetic dataset for training a shape detection model 
 - **High-Speed Generation:** Produces **24,000 images in just 3 minutes**, significantly accelerating model training.
 
 ### **Implementation Details**
-- **Shapes Generated:** Circles, squares, triangles, and polygons.
-- **Randomized Parameters:** Position, rotation, scale, and background textures.
+- **Shapes Generated:** Circles, , triangles, and polygons.
+- **Randomized Parameters:** Position, rotation, scale, noise, blur and background textures.
 - **Libraries Used:** OpenCV for image processing, NumPy for mathematical transformations, and multiprocessing for faster image generation.
 
 ### **Usage**
@@ -44,11 +44,18 @@ To create a high-quality synthetic dataset for training a shape detection model 
     ```
 4. Your dataset will be stored in the output folder
 Here is a short demonstration of the script
+
+[![demo_thumnail](img/demo_thumnail.png)](https://www.youtube.com/watch?v=M6aMvx-366g)
+
+*The script is running on the CPU instead of the GPU, resulting in slower performance.*
 ---
 
 ## **2. YOLOv8-Based Shape & Letter Detection on UAV**
 The previous command was achieved through extensive experimentation to generate the most realistic dataset that met the requirements. A YOLOv8 model was then trained separately for **(a) shape detection** and **(b) letter recognition**. The following images showcase the final results.
 
+![d1](img/d1.png)
+![d2](img/d2.png)
+![d3](img/d3.png)
 
 ---
 
@@ -60,9 +67,6 @@ The previous command was achieved through extensive experimentation to generate 
 ---
 
 ## **Simulation for Testing**
-- **Enhance dataset diversity** by incorporating additional real-world images.
-- **Improve letter recognition** by training on varied fonts and distortions.
-- **Expand detection capabilities** for multi-object scenarios in UAV footage.
+To test the whole pipline, i developed a 3d environment in Unity to visualize the ardupilot simulator, giving a visual feed for testing the model detection, and autmoation scripts
 
-This project demonstrates the effectiveness of synthetic dataset generation in training high-accuracy models and optimizing real-time deployment on edge devices like Jetson Orin.
-
+[![demo](img/Simulator_demo.png)](https://youtu.be/kaauHcKhMOU?si=Xqrb-vp8SKQsXiG2&t=12)
