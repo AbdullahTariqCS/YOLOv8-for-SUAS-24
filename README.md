@@ -1,5 +1,7 @@
 # **Detection Model Dataset Generator & YOLOv8-Based UAV Detection**
 
+*The source code for these projects is private under **Team Foxtrot**. For access to the codebase, please email me at **AbdullahTariq.git@gmail.com**.*
+
 ## **Overview**
 This project focuses on developing an end-to-end pipeline for generating synthetic datasets and training a UAV-based shape and letter detection model using YOLOv8. The project consists of two main components:
 
