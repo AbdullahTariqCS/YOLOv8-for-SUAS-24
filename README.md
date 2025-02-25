@@ -51,6 +51,7 @@ Here is a short demonstration of the script
 [![demo_thumnail](img/demo_thumnail.png)](https://www.youtube.com/watch?v=M6aMvx-366g)
 
 *The script is running on the CPU instead of the GPU, resulting in slower performance.*
+
 ---
 
 ## **2. YOLOv8-Based Shape & Letter Detection on UAV**
