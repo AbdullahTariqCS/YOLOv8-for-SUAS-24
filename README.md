@@ -23,7 +23,7 @@ To create a high-quality synthetic dataset for training a shape detection model 
 ### **Implementation Details**
 - **Shapes Generated:** Circles, Semicircles, Cross, and Polygons.
 - **Randomized Parameters:** Position, rotation, scale, noise, blur and background textures.
-- **Libraries Used:** OpenCV for image processing, NumPy for mathematical transformations, and multiprocessing for faster image generation.
+- **Libraries Used:** OpenCV for image processing, NumPy for mathematical transformations.
 
 ### **Usage**
 1. Run the following command to install all the dependencies
